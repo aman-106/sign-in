@@ -18,7 +18,6 @@ function validateEmail(email) {
 function validatePassword(password) {
   const regex = /(?!.*[A-Z]{1}.*[A-Z]{1})(?=.*[A-Z]{1})(^.{6,}$)/;
   return regex.test(String(password));
-  // return /(?=.*[A-Z])(.){6,}/.test(String(password));
 }
 
 export const authUserState = {
